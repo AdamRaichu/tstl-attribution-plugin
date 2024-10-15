@@ -1,9 +1,10 @@
 {
   "name": "@adamraichu/tstl-attribution-plugin",
-  "version": "0.0.7",
-  "description": "An example transformer for Typescript-To-Lua",
+  "version": "1.0.0",
+  "description": "A transformer for Typescript-To-Lua which can be used to add attribution to output files.",
   "main": "./out/index.js",
   "scripts": {
+    "prepack": "npm run build",
     "build": "tsc"
   },
   "author": "AdamRaichu",
@@ -14,5 +15,8 @@
   },
   "files": [
     "out/**/*"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
